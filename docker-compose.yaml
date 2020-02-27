@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+  proxy:
+    image: traefik:v1.7
+    command: --docker.watch --api --docker.exposedbydefault=false --docker --defaultentrypoints="http" --entryPoints="Name:http Address::80"
+    ports:
+    - "80:80"     #The HTTP port
+    - "8080:8080" #The Web UI (enabled by --api)
+    volumes:
+    - /var/run/docker.sock:/var/run/docker.sock:cached #So that Traefik can listen to the Docker events
+
+  app:
+    build:
+      context: ./
+      dockerfile: dev.Dockerfile
+    labels:
+    - >-
+      traefik.frontend.rule=Host:thisismyshitty.local.website;
+    - traefik.enable=true
+    - traefik.port=4321
