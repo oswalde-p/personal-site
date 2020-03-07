@@ -14,8 +14,11 @@ services:
     build:
       context: ./
       dockerfile: dev.Dockerfile
+    volumes:
+    - ./src:/app/src
+    - ./public:/app/public
     labels:
     - >-
-      traefik.frontend.rule=Host:thisismyshitty.local.website;
+      traefik.frontend.rule=Host:jasonpursey.local;
     - traefik.enable=true
     - traefik.port=4321
