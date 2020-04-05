@@ -17,6 +17,8 @@ services:
     volumes:
     - ./src:/app/src
     - ./public:/app/public
+    ports:
+    - "4321:4321" # Expose for easy testing on mobile
     labels:
     - >-
       traefik.frontend.rule=Host:jasonpursey.local;
