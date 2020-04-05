@@ -36,10 +36,9 @@ export default {
 <style lang="scss" scoped>
 nav {
   display: flex;
-  flex-flow: spread;
   font-size: 30px;
+  height: 8vh;
   justify-content: space-between;
-  padding: 0.4em 0;
 }
 
 ul {
@@ -57,6 +56,7 @@ li {
 }
 
 a {
+  color: white;
   text-decoration: none;
   &:visited {
     color: white;
@@ -69,7 +69,7 @@ a {
 .home {
   color: white !important ;
   font-size: 40px;
-  margin: 0 0 0 1em;
+  margin: 0 0 0 0.5em;
 }
 
 .menu-icon{
