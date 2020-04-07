@@ -26,7 +26,7 @@ section {
 
 .hero {
   background-image: linear-gradient(rgba(0,0,0,1) 0%, rgba(0,0,0,0) 20%),
-    url("../../public/images/home/hero.jpg");
+    url("../../../public/images/home/hero.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   font-size: 100px;
@@ -73,7 +73,7 @@ a {
 @media all and (max-width: 700px) {
   .hero {
     background-image: linear-gradient(rgba(10,10,10,1) 0%, rgba(0,0,0,0) 20%),
-      url("../../public/images/home/hero-mobile.jpg");
+      url("../../../public/images/home/hero-mobile.jpg");
     font-size: 50px;
   }
 
