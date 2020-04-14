@@ -15,12 +15,13 @@ export default {
     #about
       p full stack developer
       p relocating from 🥨 to ☕
-      p bad with words, good with js
+      p bad with words, better with js
       .picture(src="" alt="jason looking very handsome and competent")
 
 </template>
 <style lang="scss" scoped>
 section {
+  margin: 0;
   scroll-behavior: smooth;
 }
 
@@ -70,7 +71,7 @@ a {
   width: 500px;
 }
 
-@media all and (max-width: 700px) {
+@media (max-width: 700px) {
   .hero {
     background-image: linear-gradient(rgba(10,10,10,1) 0%, rgba(0,0,0,0) 20%),
       url("../../../public/images/home/hero-mobile.jpg");
