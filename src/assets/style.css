@@ -12,6 +12,23 @@ body {
   width: 100%;
 }
 
+section {
+  margin: 10vh 25vw;
+  min-height: 50vh;
+  text-align: start;
+}
+
 a {
+  color: white;
   font-family: 'Raleway', sans-serif;
+}
+
+a:visited {
+  color: white;
+}
+
+@media (max-width: 700px) {
+  section {
+    margin: 10vh 10vw;
+  }
 }
