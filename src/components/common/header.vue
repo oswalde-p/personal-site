@@ -20,16 +20,16 @@ export default {
     ul.mobile(v-if="mobileMenuOpen" v-on:click="toggleMobileMenu()")
       li.close ✕
       li
-        router-link(to="/jobs") Employment
-      li
         router-link(to="/projects") Projects
+      li
+        router-link(to="/jobs") Employment
       li
         router-link(to="/contact") Contact
     ul.desktop
       li
-        router-link(to="/jobs") Employment
-      li
         router-link(to="/projects") Projects
+      li
+        router-link(to="/jobs") Employment
       li
         router-link(to="/contact") Contact
 </template>
