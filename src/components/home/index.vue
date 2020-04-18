@@ -7,11 +7,12 @@ export default {
   section
     .hero
       .copy
-        h1 hello.
+        h1 Hi there,
         p
-          | my name is
+          | My name is
           |
-          a(href="#about") jason
+          a(href="#about") Jason
+          | .
     #about
       p full stack developer
       p relocating from 🥨 to ☕

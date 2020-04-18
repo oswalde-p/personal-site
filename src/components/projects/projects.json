@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Quack",
+    "tags": ["Fitbit"],
+    "description": "A simple, practical watchface for fitbit watches that's packed with features and fully customisable.",
+    "externalLink": {
+      "target": "https://gallery.fitbit.com/details/385076eb-cd5a-40b9-ac6e-64cb0fa2e25b",
+      "text": "Check it out in the Fitbit gallery"
+    },
+    "imageName": "quack.png"
+  },
+  {
+    "title": "guhrli",
+    "tags": ["Fitbit"],
+    "description": "Watchface capable of displaying continuous glucose monitoring (cgm) data from a variety of sources where the time changes colour to inform users of dangerous levels.",
+    "externalLink": {
+      "target": "https://gallery.fitbit.com/details/69cb39c2-2290-49de-b7e2-4223afea053d",
+      "text": "Check it out in the Fitbit gallery"
+    },
+    "imageName": "guhrli.png"
+  }
+]
