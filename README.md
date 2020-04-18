@@ -1,29 +1,8 @@
 # personal-site
+[jasonpursey.com](https://jasonpursey.com)
 
-## Project setup
-```
-npm install
-```
+## Running with docker compose
+`docker-compose up --build` is all you need :)
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## Deployment
+Deployment is handled by netlify. Any commits to the `production` branch are automatically released
