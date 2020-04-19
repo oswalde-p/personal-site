@@ -10,11 +10,11 @@ export default {
         a(href="https://github.com/oswalde-p" target="_blank")
           img(src="/images/footer/Github-Mark-Light-64px.png" alt="github")
       li
-        a(href="https://twitter.com/jasonpursey" target="_blank")
-          img(src="/images/footer/Twitter_Social_Icon_Circle_White.png" alt="twitter")
-      li
         a(href="https://www.linkedin.com/in/jason-pursey/" target="_blank")
           img(src="/images/footer/LI-In-Bug.png" alt="linkedin")
+      li
+        a(href="https://twitter.com/jasonpursey" target="_blank")
+          img(src="/images/footer/Twitter_Social_Icon_Circle_White.png" alt="twitter")
       li
         a(href="https://www.facebook.com/the.jason.pursey" target="_blank")
           img(src="/images/footer/f_logo_RGB-White_72.png" alt="facebook")
