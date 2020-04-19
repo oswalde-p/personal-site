@@ -14,7 +14,7 @@ export default {
           a(href="#about") Jason
           | .
     #about
-      p full stack developer
+      p full stack engineer
       p relocating from 🥨 to ☕
       p bad with words, better with js
       .picture(src="" alt="jason looking very handsome and competent")
@@ -31,11 +31,11 @@ section {
     url("../../../public/images/home/hero.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  font-size: 100px;
   height: 92vh;
 }
 
 .copy {
+  font-size: 100px;
   margin: 0 auto 0 10vw;
   padding-top: 10vh;
   text-align: start;
@@ -44,6 +44,13 @@ section {
   }
 }
 
+h1 {
+  font-size: 145px;
+}
+
+p {
+  color: white;
+}
 a {
   color: white;
   font-family: inherit;
@@ -76,6 +83,12 @@ a {
   .hero {
     background-image: linear-gradient(rgba(10,10,10,1) 0%, rgba(0,0,0,0) 20%),
       url("../../../public/images/home/hero-mobile.jpg");
+  }
+  h1 {
+    font-size: 75px;
+  }
+
+  p {
     font-size: 50px;
   }
 
