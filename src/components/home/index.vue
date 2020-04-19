@@ -11,7 +11,7 @@ export default {
         p
           | My name is
           |
-          a(href="#about") Jason
+          a(href="#about") slim shady
           | .
     #about
       p full stack developer
