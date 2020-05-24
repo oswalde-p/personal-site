@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "vue-cli-service serve --port 4321",
     "build": "vue-cli-service build",
-    "build:netlify": "vue-cli-service build && cp ./_redirects dist/ && cp ./robots.txt dist/ && cp -r zohoverify dist",
+    "build:netlify": "vue-cli-service build && cp ./_redirects dist/ && cp ./robots.txt dist/",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
