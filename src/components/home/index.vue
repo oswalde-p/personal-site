@@ -15,8 +15,8 @@ export default {
           | .
     #about
       p full stack engineer
-      p relocating from 🥨 to ☕
-      p bad with words, better with js
+      p pretty bad at writing about myself
+      p pretty good at writing software
       .picture(src="" alt="jason looking very handsome and competent")
 
 </template>
@@ -71,7 +71,7 @@ a {
 }
 
 .picture {
-  border: 1px solid red;
+  // border: 1px solid red;
   height: 400px;
   position: absolute;
   left: 4vw;
