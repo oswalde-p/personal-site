@@ -41,18 +41,18 @@ export default {
 </template>
 <style lang="scss" scoped>
 .project {
+  background-color: #ccc;
+  border-radius: 20px;
+  color: black;
   display: grid;
   grid-column-gap: 1em;
   grid-row-gap: 2em;
   grid-template-columns: 2fr 3fr;
-  padding: 9em 0;
-  &:not(:last-of-type){
-    border-bottom: 1px solid #ccc;
-  }
+  margin: 4em auto;
+  padding: 4em 2em;
 }
-
-
 img {
+  border-radius: 15px;
   width: 80%;
 }
 
@@ -69,6 +69,10 @@ li {
   font-weight: 500;
   margin: 0.6em 1em 0.6em 0;
   padding: 0.2em 1em 0.2em 1em;
+}
+
+p, a {
+  color: black;
 }
 
 @media all and (max-width: 700px) {
