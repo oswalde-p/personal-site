@@ -14,7 +14,7 @@ body {
 
 section {
   margin: 10vh 20vw;
-  min-height: 50vh;
+  /* min-height: 50vh; */
   text-align: start;
 }
 

@@ -8,9 +8,9 @@ export default {
     ul
       li
         a(href="https://github.com/oswalde-p" target="_blank")
-          img(src="/images/footer/Github-Mark-Light-64px.png" alt="github")
+          img(src="/images/footer/GitHub-Mark-Light-64px.png" alt="github")
       li
-        a(href="https://www.linkedin.com/in/jason-pursey/" target="_blank")
+        a(href="https://www.linkedin.com/in/jason-pursey" target="_blank")
           img(src="/images/footer/LI-In-Bug.png" alt="linkedin")
       li
         a(href="https://twitter.com/jasonpursey" target="_blank")
