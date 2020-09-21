@@ -22,6 +22,7 @@ export default {
 </template>
 <style lang="scss" scoped>
 section {
+  background-color: initial;
   margin: 0;
   scroll-behavior: smooth;
 }

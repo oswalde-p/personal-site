@@ -30,7 +30,7 @@ export default {
 }
 </script>
 <template lang="pug">
-  .project
+  .project.item
     img(v-if="imageName" :src="imagePath")
     .info
       h2 {{ title }}
@@ -44,15 +44,20 @@ export default {
   display: grid;
   grid-column-gap: 1em;
   grid-row-gap: 2em;
-  grid-template-columns: 2fr 3fr;
-  padding: 9em 0;
-  &:not(:last-of-type){
-    border-bottom: 1px solid #ccc;
-  }
+  grid-template-columns: 2fr 3fr 1fr;
+  padding-top: 1em;
 }
 
+.info, img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
 img {
+  box-sizing: border-box;
+  padding: 10%;
+  margin-left: 5em;
   width: 80%;
 }
 
@@ -62,24 +67,32 @@ ul {
 }
 
 li {
-  background-color: #eee;
+  background-color: #333;
   border-radius: 1em;
-  color: #555;
+  color: #eee;
   display: inline-block;
   font-weight: 500;
   margin: 0.6em 1em 0.6em 0;
   padding: 0.2em 1em 0.2em 1em;
 }
 
+a {
+  color: black;
+}
+
 @media all and (max-width: 700px) {
   .project {
     grid-template-columns: 100%;
-    padding-top: 3em;
   }
 
   img {
-    margin: 0 10%;
+    margin: 10%;
+    padding: 0;
     width: 80%;
+  }
+
+  .info {
+    margin: 0 2em 3em;
   }
 }
 </style>
