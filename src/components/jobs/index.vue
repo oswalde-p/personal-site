@@ -5,7 +5,7 @@ export default {
 </script>
 <template lang="pug">
   section.jobs
-    .job
+    .job.item
       .copy
         h2 unu GmbH, Berlin 2018 - 2020
         h3 Junior Software Engineer, Full Stack
@@ -14,25 +14,30 @@ export default {
 </template>
 <style lang="scss" scoped>
 .job {
-  background-color: #FFDE00;
   color: #333;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 80vh;
   overflow: hidden;
+  position: relative;
 }
 
 .copy {
-  float: left;
-  padding: 4em 0 1em 4em;
-  min-height: 13em;
-  width: 40%;
+  margin: 0 5em;
 }
 
 img {
-  float: right;
-  width: 50%;
+  width: 100%;
 }
 
 h2 {
   font-size: 35px;
+}
+
+a, .copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 a img {
@@ -40,18 +45,16 @@ a img {
 }
 
 @media all and (max-width: 1500px) {
-  .copy {
-  padding: 2em;
-    width: unset;
-  }
-  img {
-    float: none;
-    margin-bottom: -0.5em;
-    width: 100%;
-  }
 }
 
 @media all and (max-width: 700px) {
+  .job {
+    grid-template-columns: 1fr;
+    min-height: unset;
+  }
 
+  .copy {
+    margin: 5em 2em;
+  }
 }
 </style>

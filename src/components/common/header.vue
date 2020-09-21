@@ -87,6 +87,7 @@ img {
   text-align: start;
   top: 0;
   width: 100%;
+  z-index: 1;
   & li {
     display: block;
     padding: 0.5em 1em;

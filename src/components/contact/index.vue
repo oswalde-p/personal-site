@@ -28,12 +28,19 @@ export default {
       a(:href="guhrliIssue" target="_blank") open an issue on github.
     h1 Recruitment
     p
-      | Looking for your next engineer? Great! Reach out on LinkedIn or
+      | Looking for your next engineer? Great! Reach out on
+      |
+      a(href="https://www.linkedin.com/in/jason-pursey/" target="_blank") LinkedIn
+      |
+      | or
       |
       a(:href="`mailto:${jobsEmail}`") email me
-      | ! Please note that right now I'm only interested in working in Melbourne or full time remote :)
 </template>
 <style lang="scss" scoped>
+  section {
+    margin: 5em 20%;
+  }
+
   h3 {
     margin-top: 3em;
   }
