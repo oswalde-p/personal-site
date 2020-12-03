@@ -5,4 +5,4 @@
 `docker-compose up --build` is all you need :)
 
 ## Deployment
-Deployment is handled by netlify. Any commits to the `production` branch are automatically released
+Deployment is handled by netlify. Any commits to the `master` branch are automatically released
