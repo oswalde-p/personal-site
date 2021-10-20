@@ -58,7 +58,8 @@ a {
 }
 
 #about {
-  margin: 0 10vw;
+  height: 100vh;
+  padding: 1rem 10vw;
   position: relative
 }
 
@@ -69,15 +70,6 @@ a {
   &:nth-child(2) {
     text-align: end;
   }
-}
-
-.picture {
-  // border: 1px solid red;
-  height: 400px;
-  position: absolute;
-  left: 4vw;
-  top: 10vh;
-  width: 500px;
 }
 
 @media (max-width: 700px) {
@@ -95,12 +87,6 @@ a {
 
   #about p{
     font-size: 35px;
-  }
-
-  .picture {
-    left: 0;
-    height: 250px;
-    width: 200px;
   }
 }
 </style>
