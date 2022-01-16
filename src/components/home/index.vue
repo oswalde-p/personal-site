@@ -14,9 +14,13 @@ export default {
           a(href="#about") Jason
           | .
     #about
-      p full stack engineer
-      p pretty bad at writing about myself
-      p pretty good at writing software
+      p software developer and human
+      //- p i build deployment pipelines
+      p i make websites
+      p
+        | take a
+        |
+        a(href="/projects") look around
       .picture(src="" alt="jason looking very handsome and competent")
 
 </template>
@@ -58,16 +62,26 @@ a {
 }
 
 #about {
-  height: 100vh;
-  padding: 1rem 10vw;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 88vh;
+  justify-content: space-between;
+  padding: 8rem 6vw 1rem;
   position: relative
 }
 
 #about p {
-  font-size: 80px;
-  margin: 2em 0;
+  font-size: 50px;
   text-align: start;
   &:nth-child(2) {
+    align-self: center;
+    max-width: 50vw;
+    padding-left: 80px;
+  }
+  &:nth-child(3) {
+    align-self: end;
     text-align: end;
   }
 }
@@ -83,6 +97,11 @@ a {
 
   p {
     font-size: 50px;
+  }
+
+  #about {
+    height: 80vh;
+    padding: 1rem 2rem;
   }
 
   #about p{

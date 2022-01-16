@@ -24,8 +24,10 @@ export default {
 
 .footer {
   border-top: 1px solid gray;
+  box-sizing: border-box;
+  min-height: 12vh;
   padding-top: 3em;
-  margin: 0 20vw 5vh;
+  margin: 0 20vw 0;
 }
 
 ul {
@@ -45,7 +47,8 @@ img {
 
 @media all and (max-width: 700px) {
   .footer {
-    margin: 0 10vw 5vh;
+    margin: 0 10vw 0;
+    min-height: 20vh;
   }
 }
 </style>
