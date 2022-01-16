@@ -18,7 +18,7 @@ export default {
       li
         a(href="https://www.facebook.com/the.jason.pursey" target="_blank")
           img(src="/images/footer/f_logo_RGB-White_72.png" alt="facebook")
-    p © 2020 jason pursey
+    p © {{ new Date().getFullYear() }} jason pursey
 </template>
 <style lang="scss" scoped>
 

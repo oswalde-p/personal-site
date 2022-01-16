@@ -10,7 +10,7 @@ console.log(`%c
 | | | | | | |  __/ | | | | | |  __/  \\   /
 |_| |_|_|_|  \\___| |_| |_| |_|\\___|   \\_/
 
-`, 'color: purple;')
+`, 'color: turquoise;')
 
 /* eslint-disable-next-line no-console */
 console.log('https://jasonpursey.com/contact')
