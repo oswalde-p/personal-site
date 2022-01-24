@@ -140,12 +140,6 @@ a {
   }
 }
 
-@keyframes fadein {
-  0% { opacity: 0%; }
-  80% { opacity: 0%; }
-  100% { opacity: 100%; }
-}
-
 @keyframes fadeinout {
   0% { opacity: 0%; }
   40% { opacity: 100%; }
@@ -174,6 +168,12 @@ a {
 
   #about p{
     font-size: 35px;
+    margin: 0 auto;
+    text-align: center;
+    &:nth-child(2) {
+      padding-left: 0 !important;
+      min-height: 4em;
+    }
   }
 }
 </style>
