@@ -27,9 +27,10 @@ export default {
       }
     },
     onElementObserved(entries) {
-      const el = entries[0]
-      if (el.isIntersecting) {
+      const entry = entries[0]
+      if (entry.isIntersecting) {
         this.startSkillAnimation()
+        this.observer.unobserve(entry.target)
       }
     },
     startSkillAnimation() {
