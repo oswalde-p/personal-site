@@ -1,6 +1,41 @@
 <script>
 export default {
   name: 'Home',
+  data() {
+    return {
+      observer: null,
+      activeSkillIndex: 0,
+      totalSkillCount: 9,
+    }
+  },
+  created() {
+    this.observer = new IntersectionObserver(
+      this.onElementObserved,
+      {
+        threshold: 0.8,
+      },
+    )
+  },
+  mounted() {
+    this.observer.observe(document.querySelector('#about'))
+  },
+  methods: {
+    skillPlusPlus() {
+      this.activeSkillIndex++
+      if (this.activeSkillIndex >= this.totalSkillCount) {
+        this.activeSkillIndex = 0
+      }
+    },
+    onElementObserved(entries) {
+      const el = entries[0]
+      if (el.isIntersecting) {
+        this.startSkillAnimation()
+      }
+    },
+    startSkillAnimation() {
+      setInterval(this.skillPlusPlus, 3800)
+    },
+  },
 }
 </script>
 <template lang="pug">
@@ -15,12 +50,19 @@ export default {
           | .
     #about
       p software developer and human
-      //- p i build deployment pipelines
-      p i make websites
       p
-        | take a
-        |
-        a(href="/projects") look around
+        ul.mad-skillz
+          li.skill(:class="{ active: activeSkillIndex === 0 }") i make websites
+          li.skill(:class="{ active: activeSkillIndex === 1 }") useful websites
+          li.skill(:class="{ active: activeSkillIndex === 2 }") <i>pretty</i> websites
+          li.skill(:class="{ active: activeSkillIndex === 3 }") <b>effective</b> websites
+          li.skill(:class="{ active: activeSkillIndex === 4 }") accessible websites
+          li.skill(:class="{ active: activeSkillIndex === 5 }") i build deployment pipelines
+          li.skill(:class="{ active: activeSkillIndex === 6 }") configure DNS records
+          li.skill(:class="{ active: activeSkillIndex === 7 }") pay attention to details
+          li.skill(:class="{ active: activeSkillIndex === 8 }") update the docs
+      p
+        a(href="/projects") take a look around
       .picture(src="" alt="jason looking very handsome and competent")
 
 </template>
@@ -85,6 +127,32 @@ a {
     text-align: end;
   }
 }
+
+.mad-skillz {
+  display: inline;
+  padding-left: 0;
+  .skill {
+    display: none;
+  }
+  .active {
+    animation: fadeinout 4s linear;
+    display: inline;
+  }
+}
+
+@keyframes fadein {
+  0% { opacity: 0%; }
+  80% { opacity: 0%; }
+  100% { opacity: 100%; }
+}
+
+@keyframes fadeinout {
+  0% { opacity: 0%; }
+  40% { opacity: 100%; }
+  80% { opacity: 100%; }
+  100% { opacity: 0%; }
+}
+
 
 @media (max-width: 700px) {
   .hero {
