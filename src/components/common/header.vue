@@ -6,6 +6,11 @@ export default {
       mobileMenuOpen: false,
     }
   },
+  computed: {
+    isHome() {
+      return this.$route.path === '/'
+    },
+  },
   methods: {
     toggleMobileMenu() {
       this.mobileMenuOpen = !this.mobileMenuOpen
@@ -15,19 +20,16 @@ export default {
 </script>
 <template lang="pug">
   nav
-    router-link.home(to="/") ?J=P
+    router-link.home(to="/" v-if="!isHome")
+      img(src="icon-back.svg" height="30px")
     img.menu-icon(src="hamburger.svg" v-on:click="toggleMobileMenu()")
     ul.mobile(v-if="mobileMenuOpen" v-on:click="toggleMobileMenu()")
       li.close ✕
-      li
-        router-link(to="/jobs") Employment
       li
         router-link(to="/projects") Projects
       li
         router-link(to="/contact") Contact
     ul.desktop
-      li
-        router-link(to="/jobs") Employment
       li
         router-link(to="/projects") Projects
       li
@@ -36,41 +38,43 @@ export default {
 <style lang="scss" scoped>
 nav {
   display: flex;
+  height: auto;
   font-size: 30px;
-  height: 8vh;
   justify-content: space-between;
-  margin-top: 0.5em;
+  margin: 0.6em;
 }
 
 ul {
   list-style-type: none;
-  margin: 0;
+  height: 60px;
+  margin: 0 0 0 auto;
   padding: 0;
 }
 
 li {
   display: inline-block;
+  height: 100%;
   padding: 0 3vw;
-  &:not(:last-child) {
-    border-right: 0.5px solid white;
-  }
 }
 
 a {
   color: white;
+  height: 40px;
+  padding: 10px;
   text-decoration: none;
   &:visited {
     color: white;
   }
+  &:hover {
+    color: lightgrey;
+  }
   &.router-link-active {
-    color: gray;
+    border-bottom: 2px solid white;
   }
 }
 
 .home {
-  color: white !important ;
-  font-size: 40px;
-  margin: 0 0 0 0.5em;
+  border: none !important ;
 }
 
 .menu-icon{
@@ -86,6 +90,7 @@ img {
   position: absolute;
   text-align: start;
   top: 0;
+  height: auto;
   width: 100%;
   z-index: 1;
   & li {
@@ -96,6 +101,7 @@ img {
 
 .close {
   cursor: pointer;
+  margin-right: 0.9em;
   text-align: end;
 }
 
@@ -105,6 +111,7 @@ img {
   }
   .menu-icon {
     display: block;
+    margin-left: auto;
   }
 }
 </style>

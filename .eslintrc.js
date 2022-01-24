@@ -12,6 +12,7 @@ module.exports = {
   },
   rules: {
     'semi': ['error', 'never'],
-    'max-len': ['error', { code: 120 }]
+    'max-len': ['error', { code: 120 }],
+    'no-plusplus': ['off']
   },
 };

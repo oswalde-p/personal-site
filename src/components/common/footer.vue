@@ -18,14 +18,16 @@ export default {
       li
         a(href="https://www.facebook.com/the.jason.pursey" target="_blank")
           img(src="/images/footer/f_logo_RGB-White_72.png" alt="facebook")
-    p © 2020 jason pursey
+    p © {{ new Date().getFullYear() }} jason pursey
 </template>
 <style lang="scss" scoped>
 
 .footer {
   border-top: 1px solid gray;
+  box-sizing: border-box;
+  min-height: 12vh;
   padding-top: 3em;
-  margin: 0 20vw 5vh;
+  margin: 0 20vw 0;
 }
 
 ul {
@@ -45,7 +47,8 @@ img {
 
 @media all and (max-width: 700px) {
   .footer {
-    margin: 0 10vw 5vh;
+    margin: 0 10vw 0;
+    min-height: 20vh;
   }
 }
 </style>
