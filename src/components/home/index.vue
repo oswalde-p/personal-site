@@ -129,6 +129,14 @@ a {
   }
 }
 
+
+@keyframes fadeinout {
+  0% { opacity: 0; }
+  40% { opacity: 1; }
+  80% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
 .mad-skillz {
   display: inline;
   padding-left: 0;
@@ -136,16 +144,9 @@ a {
     display: none;
   }
   .active {
-    animation: fadeinout 4s linear;
+    animation: fadeinout 3.8s linear;
     display: inline;
   }
-}
-
-@keyframes fadeinout {
-  0% { opacity: 0%; }
-  40% { opacity: 100%; }
-  80% { opacity: 100%; }
-  100% { opacity: 0%; }
 }
 
 
