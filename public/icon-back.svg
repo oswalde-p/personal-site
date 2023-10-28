@@ -1,6 +1,0 @@
-<?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
-<svg height="40px" width="45px" viewBox="0 0 100 80" xmlns="http://www.w3.org/2000/svg">
-  <line x1="10" y1="40" x2="90" y2="40" stroke="white" stroke-linecap="round" stroke-width="8"/>
-  <line x1="10" y1="40" x2="30" y2="10" stroke="white" stroke-linecap="round" stroke-width="8"/>
-  <line x1="10" y1="40" x2="30" y2="70" stroke="white" stroke-linecap="round" stroke-width="8"/>
-</svg>
